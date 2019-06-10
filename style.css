@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.chat {
+  width: 100%;
+
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+}
+
+.chat-header {
+  text-align: center;
+  background-color: #075d52;
+  font-size: 24px;
+  padding: 10px;
+  color: #fff;
+  font-family: "Lobster", "cursive";
+}
+
+.chat-window {
+  height: 85%;
+  width: 100%;
+  overflow-y: scroll;
+  padding-bottom: 10px;
+}
+
+#messageForm {
+  background-color: #03312b;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  height: 15%;
+}
+
+#msg-input {
+  padding: 7px;
+  border-radius: 20px;
+  border: 0;
+  width: 70%;
+  outline: none;
+  margin-right: 10px;
+}
+
+#msg-btn {
+  width: 20%;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+.msg {
+  list-style-type: none;
+}
+
+span {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  text-align: left;
+  margin: 5px 5px 5px 10px;
+  box-shadow: 0.2px 0.3px 2px rgba(0, 0, 0, 0.3);
+}
+
+i {
+  font-weight: bold;
+}
+
+.my {
+  text-align: right;
+}
+
+.my span {
+  background-color: #d0eeb2;
+}
+
+.my i {
+  display: none;
+}
+
+/* Scroller styling */
+
+#chat-window::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#chat-window::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+#chat-window::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #075d52;
+}
+
+/* Name form */
+
+#nameForm {
+  background-color: #fff;
+  box-shadow: 0.3px 0.3px 10px rgba(0, 0, 0, 0.25);
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  animation: modalUp 1s 0.3s forwards;
+}
+
+#name-input {
+  border: none;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #363636;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#name-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #075d52;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes modalUp {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}

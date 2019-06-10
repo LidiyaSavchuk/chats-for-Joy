@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat for Joy</title>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/697DFAAE-650E-D14F-AC82-17C41D6B93E7/main.js" charset="UTF-8"></script></head>
+<script src="https://cdn.jsdelivr.net/lodash/4.10.0/lodash.js"></script>
+<body>
+
+    <div class="chat">
+        <form id="nameForm">
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="name-btn">Enter</button>
+        </form>
+        <div class="chat-header">Chat for Joy</div>
+        <div class="chat-window" id="chat-window">
+            <ul id="messages">
+
+            </ul>
+            <form id="messageForm">
+                <input type="text" id="msg-input" placeholder="Enter a message" disabled>
+                <button id="msg-btn" disabled>Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
